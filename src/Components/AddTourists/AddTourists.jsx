@@ -9,6 +9,7 @@ const AddTourists = () => {
         e.preventDefault()
         const form=e.target;
         const image=form.image.value;
+        const spotName=form.spotName.value;
         const country=form.country.value;
         const location=form.location.value;
         const short=form.short.value;
@@ -18,7 +19,7 @@ const AddTourists = () => {
         const total=form.total.value;
         const userName=form.userName.value;
         const userEmail=form.userEmail.value;
-        const addSpot={image,country,location,short,average,season,travel,total,userName,userEmail}
+        const addSpot={image,spotName,country,location,short,average,season,travel,total,userName,userEmail}
         console.log(addSpot)
 
         // send server
