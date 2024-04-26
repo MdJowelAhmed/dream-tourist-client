@@ -14,7 +14,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Login = () => {
-    const { loginUser} = useContext(AuthContext)
+    const { loginUser, loginGoogle,loginGithub} = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const [loginError, setLoginError] = useState('')
@@ -61,7 +61,7 @@ const Login = () => {
             .then(result => {
                 if (result.user) {
                     Swal.fire({
-                        title: "Good job!",
+                        title: "Login Success!",
                         text: "You clicked the button!",
                         icon: "success"
                     });
@@ -119,9 +119,9 @@ const Login = () => {
                                 <div className="mx-5 mb-5 flex justify-between">
                                     <div>
 
-                                        <button onClick={() => handleSocialLogin(googleLogin)} className="btn btn-accent"> <FaGoogle /> Google</button>
+                                        <button onClick={() => handleSocialLogin(loginGoogle)} className="btn btn-accent"> <FaGoogle /> Google</button>
                                     </div>
-                                    <button onClick={() => handleSocialLogin(githubLogin)} className="btn btn-accent"><FaGithub /> Github</button>
+                                    <button onClick={() => handleSocialLogin(loginGithub)} className="btn btn-accent"><FaGithub /> Github</button>
                                 </div>
                             </div>
                         </div>
