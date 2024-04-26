@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import Footer from "../ShareComponents/Footer/Footer";
 import Navbar from "../ShareComponents/Navbar";
 
@@ -19,7 +20,27 @@ const AddTourists = () => {
         const userEmail=form.userEmail.value;
         const addSpot={image,country,location,short,average,season,travel,total,userName,userEmail}
         console.log(addSpot)
-        
+
+        // send server
+        fetch('http://localhost:5000/addSpot',{
+            method: "POST",
+            headers:{
+                "content-type":"application/json",
+            },
+            body:JSON.stringify(addSpot)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+            if(data. insertedId){
+                Swal.fire({
+                    title: "Tourists Spot Added!",
+                    text: "You clicked the button!",
+                    icon: "success"
+                  });
+                  form.reset()
+            }
+        })
       
     }
     return (

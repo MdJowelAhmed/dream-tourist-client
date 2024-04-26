@@ -159,7 +159,9 @@ const Banner = () => {
 
         //     </div>
         // </div>
-        <div className=' bg-[#F4F3F0] p-8 md:h-[600px] rounded-3xl'>
+        // style={{backgroundImage: 'url(https://img.freepik.com/free-vector/creative-waves-blue-background-dynamic-shapes-composition-vector-illustration_1142-13484.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1712880000&semt=ais)'}}
+        
+        <div className=' bg-[#F4F3F0] p-8 md:h-[600px] rounded-3xl' >
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
