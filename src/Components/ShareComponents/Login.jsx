@@ -2,14 +2,14 @@ import Footer from "./Footer/Footer";
 import Navbar from "./Navbar";
 
 
-const Register = () => {
+const Login = () => {
     return (
         <div>
             <Navbar></Navbar>
-            register
+            login
             <Footer></Footer>
         </div>
     );
 };
 
-export default Register;
+export default Login;

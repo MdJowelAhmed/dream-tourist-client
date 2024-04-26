@@ -5,6 +5,7 @@ import Register from "../ShareComponents/Register";
 import AllTouristsSpot from "../../Pages/AllToristsSpot/AllTouristsSpot";
 import AddTourists from "../AddTourists/AddTourists";
 import MyList from "../MyList/MyList";
+import Login from "../ShareComponents/Login";
 
 
   const router = createBrowserRouter([
@@ -19,6 +20,10 @@ import MyList from "../MyList/MyList";
         {
             path: '/register',
             element: <Register></Register>,
+        },
+        {
+            path: '/login',
+            element: <Login></Login>,
         },
         {
             path: '/allTourists',
