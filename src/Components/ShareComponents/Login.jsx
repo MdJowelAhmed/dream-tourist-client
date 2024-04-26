@@ -14,7 +14,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Login = () => {
-    const { loginUser, loginGoogle,loginGithub} = useContext(AuthContext)
+    const { loginUser, loginGoogle, loginGithub } = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const [loginError, setLoginError] = useState('')
@@ -78,7 +78,7 @@ const Login = () => {
             <Navbar></Navbar>
             <div>
                 <div>
-                
+
                     <div className="hero min-h-screen bg-base-200">
                         <div className="hero-content flex-col">
                             <div className="text-center ">
@@ -116,17 +116,18 @@ const Login = () => {
                                     <p>Did not have account? please <span><Link to='/register' className="text-blue-600 font-semibold">Register</Link></span></p>
                                 </div>
                                 <div className="divider divider-accent">Login With</div>
-                                <div className="mx-5 mb-5 flex justify-between">
-                                    <div>
-
-                                        <button onClick={() => handleSocialLogin(loginGoogle)} className="btn btn-accent"> <FaGoogle /> Google</button>
+                                <div className="">
+                                    <div className="mb-4">
+                                        <button onClick={() => handleSocialLogin(loginGoogle)} className="btn text-center w-1/2 mt-5 border border-red-300 ml-20 mx-auto"> <FaGoogle /> Google</button>
                                     </div>
-                                    <button onClick={() => handleSocialLogin(loginGithub)} className="btn btn-accent"><FaGithub /> Github</button>
+                                    <div>
+                                        <button onClick={() => handleSocialLogin(loginGithub)} className="btn text-center w-1/2 mb-5 border border-red-300 ml-20 mx-auto"><FaGithub /> Github</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
             <Footer></Footer>
