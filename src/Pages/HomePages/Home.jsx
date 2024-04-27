@@ -26,7 +26,7 @@ const Home = () => {
 
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"  data-aos="zoom-out-up"  data-aos-duration="3000">
              {
-                loadedSpot.map(spot=> <SpotCard key={spot._id} spot={spot}></SpotCard>)
+                loadedSpot.slice(0,6).map(spot=> <SpotCard key={spot._id} spot={spot}></SpotCard>)
               }
              </div>
             </div>

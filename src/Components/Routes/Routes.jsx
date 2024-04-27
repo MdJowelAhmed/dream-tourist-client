@@ -7,6 +7,7 @@ import AddTourists from "../AddTourists/AddTourists";
 import MyList from "../MyList/MyList";
 import Login from "../ShareComponents/Login";
 import ViewDetails from "../../Pages/View/ViewDetails";
+import PrivateRoute from "../ShareComponents/PrivateRoute/PrivateRoute";
 
 
   const router = createBrowserRouter([
@@ -30,10 +31,13 @@ import ViewDetails from "../../Pages/View/ViewDetails";
         {
             path: '/allTourists',
             element: <AllTouristsSpot></AllTouristsSpot> ,
+            loader: ()=>fetch('http://localhost:5000/addSpot')
         },
         {
             path: '/addTourists',
-            element: <AddTourists></AddTourists> ,
+            element: <PrivateRoute>
+              <AddTourists></AddTourists>
+            </PrivateRoute> ,
         },
         {
             path: '/myList',

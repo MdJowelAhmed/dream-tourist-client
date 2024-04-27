@@ -1,9 +1,12 @@
 import Swal from "sweetalert2";
 import Footer from "../ShareComponents/Footer/Footer";
 import Navbar from "../ShareComponents/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const AddTourists = () => {
+    const {user}=useContext(AuthContext)
 
     const handleAddSpot=e=>{
         e.preventDefault()
@@ -124,7 +127,7 @@ const AddTourists = () => {
                             <label className="label">
                                 <span className="label-text text-xl font-bold text-rose-500">User Name</span>
                             </label>
-                            <input type="text" name="userName" placeholder="User Name" className="input input-bordered " required />
+                            <input type="text" name="userName" defaultValue={user?.displayName} placeholder="User Name" className="input input-bordered " required />
                         </div>
                     </div>
                     <div className="flex gap-10 px-10 ">
@@ -132,7 +135,7 @@ const AddTourists = () => {
                             <label className="label">
                                 <span className="label-text text-xl font-bold text-rose-500">  User Email </span>
                             </label>
-                            <input type="email" name="userEmail" placeholder="User Email" className="input input-bordered" required />
+                            <input type="email" name="userEmail" defaultValue={user?.email} placeholder="User Email" className="input input-bordered" required />
                         </div>
                     </div>
 

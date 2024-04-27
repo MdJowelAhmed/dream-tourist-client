@@ -1,11 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { CgProfile } from "react-icons/cg";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Navbar = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
+    useEffect(() => {
+        Aos.init()
+    }, [])
     const navLink = <>
         <NavLink to='/' className={({ isActive }) => isActive ? "btn btn-primary mx-3 font-semibold text-xl" : "btn btn-secondary mx-3"}>
             <button > Home Page</button>
@@ -23,7 +28,7 @@ const Navbar = () => {
     return (
         <div className=" my-6" data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1000">
+            data-aos-duration="1500">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -46,36 +51,41 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end flex">
 
-                    <div>
+                    <div className="flex items-center gap-2">
 
+                        <div>
                         {
-                            user ?
-                                <div className="dropdown dropdown-hover">
-                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                        <div className="w-10 rounded-full">
-                                            <img src={user?.photoURL || <CgProfile />} />
-                                        </div>
-                                    </label>
-                                    <ul tabIndex={0} className="menu  dropdown-content  shadow bg-base-100 rounded-box w-40 ">
-                                        <li>
-                                            <button className="btn btn-sm  btn-ghost">{user?.displayName || 'user name not found'}</button>
-                                            <li>
-                                                {/* <button */}
-                                                {/* // onClick={logOut} className="btn btn-sm  btn-ghost">Logout</button> */}
+                            user ? <div className="dropdown dropdown-hover">
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img src={user?.photoURL || <CgProfile />} />
+                                    </div>
+                                </label>
+                                <ul tabIndex={0} className="menu  dropdown-content  shadow bg-base-100 rounded-box w-40 ">
+                                    <li>
+                                        <button className="btn btn-sm  btn-ghost">{user?.displayName || 'user name not found'}</button>
 
-                                            </li>
-                                        </li>
+                                    </li>
+                                    <li>
+                                        <button onClick={logOut} className="btn">LogOut</button>
+                                    </li>
+                                </ul>
 
-                                    </ul>
-                                </div> :
-                                <div>
-                                    <Link to='/login'><button className="btn">Login</button></Link>
-                                    <Link to='/register'><button className="btn ml-3">Register</button></Link>
-                                </div>
+                            </div> : <div>
+                                <Link to='/login'><button className="btn">Login</button></Link>
+                                <Link to='/register'><button className="btn ml-3">Register</button></Link>
+                            </div>
                         }
-
+                        </div>
+                        <div>
+                            <label className="flex cursor-pointer gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5" /><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /></svg>
+                                <input type="checkbox" value="synthwave" className="toggle theme-controller" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            </label>
+                        </div>
 
                     </div>
 
