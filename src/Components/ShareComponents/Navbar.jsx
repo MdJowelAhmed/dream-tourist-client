@@ -21,7 +21,9 @@ const Navbar = () => {
         </NavLink>
     </>
     return (
-        <div className=" my-6">
+        <div className=" my-6" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -49,28 +51,29 @@ const Navbar = () => {
                     <div>
 
                         {
-                            user ? <div className="dropdown dropdown-hover">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-10 rounded-full">
-                                        <img src={user?.photoURL || <CgProfile />} />
-                                    </div>
-                                </label>
-                                <ul tabIndex={0} className="menu  dropdown-content  shadow bg-base-100 rounded-box w-40 ">
-                                    <li>
-                                        <button className="btn btn-sm  btn-ghost">{user?.displayName || 'user name not found'}</button>
-                                        user && <li>
-                    <button
-                        // onClick={logOut}
-                        className="btn btn-sm  btn-ghost">Logout</button>
+                            user ?
+                                <div className="dropdown dropdown-hover">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user?.photoURL || <CgProfile />} />
+                                        </div>
+                                    </label>
+                                    <ul tabIndex={0} className="menu  dropdown-content  shadow bg-base-100 rounded-box w-40 ">
+                                        <li>
+                                            <button className="btn btn-sm  btn-ghost">{user?.displayName || 'user name not found'}</button>
+                                            <li>
+                                                {/* <button */}
+                                                {/* // onClick={logOut} className="btn btn-sm  btn-ghost">Logout</button> */}
 
-                </li>
-                                    </li>
+                                            </li>
+                                        </li>
 
-                                </ul>
-                            </div> : <div>
-                                <Link to='/login'><button className="btn">Login</button></Link>
-                                <Link to='/register'><button className="btn ml-3">Register</button></Link>
-                            </div>
+                                    </ul>
+                                </div> :
+                                <div>
+                                    <Link to='/login'><button className="btn">Login</button></Link>
+                                    <Link to='/register'><button className="btn ml-3">Register</button></Link>
+                                </div>
                         }
 
 

@@ -6,6 +6,7 @@ import AllTouristsSpot from "../../Pages/AllToristsSpot/AllTouristsSpot";
 import AddTourists from "../AddTourists/AddTourists";
 import MyList from "../MyList/MyList";
 import Login from "../ShareComponents/Login";
+import ViewDetails from "../../Pages/View/ViewDetails";
 
 
   const router = createBrowserRouter([
@@ -37,6 +38,11 @@ import Login from "../ShareComponents/Login";
         {
             path: '/myList',
             element: <MyList></MyList> ,
+        },
+        {
+            path: '/viewDetails/:id',
+            element: <ViewDetails></ViewDetails> ,
+            loader: ()=>fetch('http://localhost:5000/addSpot')
         },
       ]
     },
