@@ -43,6 +43,22 @@ const Login = () => {
 
             .then(result => {
                 if (result.user) {
+                    const user={
+                        email,
+                        lastLoggedAt:result.user?.metadata?.lastSignInTime
+                    }
+                    
+                    fetch(`http://localhost:5000/user`,{
+                        method: 'POST',
+                        headers:{
+                            'content-type': 'application/json'
+                        },
+                        body:JSON.stringify(user)
+                    })
+                    .then(res => res.json())
+                    .then(data =>{
+                        console.log(data)
+                    })
                     Swal.fire({
                         title: "Login success!",
                         text: "You clicked the button!",
@@ -60,6 +76,7 @@ const Login = () => {
         socialProvider()
             .then(result => {
                 if (result.user) {
+                    
                     Swal.fire({
                         title: "Login Success!",
                         text: "You clicked the button!",

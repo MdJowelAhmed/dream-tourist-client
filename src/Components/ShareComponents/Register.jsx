@@ -24,17 +24,27 @@ const Register = () => {
     } = useForm()
 
     const onSubmit = data => {
-       
-        // console.log(data)
         const { email, password} = data;
-        // console.log(email,password)
         setRegError('')
         createUser(email,password)
         .then(result=>{
-            // updateProfile(name,image)
+           
            if(result.user){
+            const createdAt = result.user?.metadata?.creationTime;
+            const user = { email, createdAt: createdAt };
+            fetch(`http://localhost:5000/user`,{
+                method: 'POST',
+                headers:{
+                    'content-type': 'application/json'
+                },
+                body:JSON.stringify(user)
+            })
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data)
+            })
             Swal.fire({
-                title: "Register successFull!",
+                title: "Register and User add successfully!",
                 text: "You clicked the button!",
                 icon: "success"
               });

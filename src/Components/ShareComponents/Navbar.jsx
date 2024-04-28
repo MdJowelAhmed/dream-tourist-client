@@ -26,7 +26,7 @@ const Navbar = () => {
         </NavLink>
     </>
     return (
-        <div className=" my-6" data-aos="fade-down"
+        <div className=" my-6 pb-10" data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">
             <div className="navbar bg-base-100">

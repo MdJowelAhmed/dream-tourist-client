@@ -8,12 +8,14 @@ import MyList from "../MyList/MyList";
 import Login from "../ShareComponents/Login";
 import ViewDetails from "../../Pages/View/ViewDetails";
 import PrivateRoute from "../ShareComponents/PrivateRoute/PrivateRoute";
+import ErrorPage from "../ShareComponents/ErrorPage";
 
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path: '/',
@@ -42,6 +44,7 @@ import PrivateRoute from "../ShareComponents/PrivateRoute/PrivateRoute";
         {
             path: '/myList',
             element: <MyList></MyList> ,
+            loader: ({params})=>fetch(`http://localhost:5000/addSpot/${params.email}`)
         },
         {
             path: '/viewDetails/:id',
