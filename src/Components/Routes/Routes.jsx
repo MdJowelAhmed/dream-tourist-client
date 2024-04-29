@@ -9,6 +9,9 @@ import Login from "../ShareComponents/Login";
 import ViewDetails from "../../Pages/View/ViewDetails";
 import PrivateRoute from "../ShareComponents/PrivateRoute/PrivateRoute";
 import ErrorPage from "../ShareComponents/ErrorPage";
+import Update from "../Update/Update";
+import CountryDetails from "../../Pages/HomePages/CountryDetails/CountryDetails";
+import Countries from "../../Pages/HomePages/Countries";
 
 
   const router = createBrowserRouter([
@@ -31,6 +34,23 @@ import ErrorPage from "../ShareComponents/ErrorPage";
             element: <Login></Login>,
         },
         {
+            path: '/countryDetails/:country',
+            element: <CountryDetails></CountryDetails>,
+            loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.country}`)
+        },
+        {
+            path: '/update/:id',
+            element: <Update></Update>,
+            loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.id}`)
+            
+        },
+        {
+            path: '/country/:country',
+            element: <Countries></Countries>,
+            loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.country}`)
+            
+        },
+        {
             path: '/allTourists',
             element: <AllTouristsSpot></AllTouristsSpot> ,
             loader: ()=>fetch('http://localhost:5000/addSpot')
@@ -43,8 +63,11 @@ import ErrorPage from "../ShareComponents/ErrorPage";
         },
         {
             path: '/myList',
-            element: <MyList></MyList> ,
-            loader: ({params})=>fetch(`http://localhost:5000/addSpot/${params.email}`)
+            element: <PrivateRoute>
+              <MyList></MyList>
+            </PrivateRoute> ,
+            // loader: ({params})=>fetch(`http://localhost:5000/myList/${params.email}`)
+            loader:()=>fetch('http://localhost:5000/addSpot')
         },
         {
             path: '/viewDetails/:id',

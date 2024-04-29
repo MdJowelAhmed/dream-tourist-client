@@ -179,7 +179,7 @@ const Banner = () => {
                  {/* <SwiperSlide>Slide 2</SwiperSlide> */}
 
                  <SwiperSlide>
-                    <div className='flex gap-5'>
+                    <div className='flex flex-col md:flex-row gap-5'>
                         <div className='flex-1 text-center mt-16 space-y-4 flex flex-col items-center justify-center'>
                             <h2 className='text-5xl text-blue-400 font-semibold'>Would you like Tourist??For You</h2>
                             <h2 className='text-4xl text-amber-600 font-semibold'> Best Sea Beach Saint martin</h2>
@@ -197,7 +197,7 @@ const Banner = () => {
                  {/* <SwiperSlide>Slide 3</SwiperSlide> */}
 
                  <SwiperSlide>
-                    <div className='flex gap-5'>
+                    <div className='flex gap-5 flex-col md:flex-row'>
                         <div className='flex-1 text-center mt-16 space-y-4 flex flex-col items-center justify-center'>
                             <h2 className='text-5xl text-blue-400 font-semibold'>Would you like Tourist??For You</h2>
                             <h2 className='text-4xl text-amber-600 font-semibold'>A Beautyfull Natural Rangamati </h2>
@@ -213,7 +213,7 @@ const Banner = () => {
 
                 {/* <SwiperSlide>Slide 1</SwiperSlide> */}
                 <SwiperSlide>
-                    <div className='flex gap-5'>
+                    <div className='flex gap-5 flex-col md:flex-row'>
                         <div className='flex-1 text-center mt-16 space-y-4 flex flex-col items-center justify-center'>
                             <h2 className='text-5xl text-blue-400 font-semibold'>Would you like Tourist??For You</h2>
                             <h2 className='text-4xl text-amber-600 font-semibold'>This is Cox's Bazar Sea Beach </h2>
@@ -229,7 +229,7 @@ const Banner = () => {
                
                 {/* <SwiperSlide>Slide 4</SwiperSlide> */}
                 <SwiperSlide>
-                    <div className='flex gap-5'>
+                    <div className='flex gap-5 flex-col md:flex-row'>
                         <div className='flex-1 text-center mt-16 space-y-4 flex flex-col items-center justify-center'>
                             <h2 className='text-5xl text-blue-400 font-semibold'>Would you like Tourist?? For You</h2>
                             <h2 className='text-4xl text-amber-600 font-semibold'>This is Bangkok </h2>

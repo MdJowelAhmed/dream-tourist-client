@@ -6,11 +6,14 @@ import SpotCard from "./SpotCard";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import Countries from "./Countries";
+import MustNeed from "./MustNeed";
+import Happy from "../../Components/Happy.jsx/Happy";
 
 
 const Home = () => {
     const loadedSpot=useLoaderData()
-    console.log(loadedSpot)
+    // console.log(loadedSpot)
     useEffect(() => {
         Aos.init()
     }, [])
@@ -29,7 +32,11 @@ const Home = () => {
                 loadedSpot.slice(0,6).map(spot=> <SpotCard key={spot._id} spot={spot}></SpotCard>)
               }
              </div>
+
             </div>
+            <Countries></Countries>
+            <MustNeed></MustNeed>
+            <Happy></Happy>
            <Footer></Footer>
         </div>
     );

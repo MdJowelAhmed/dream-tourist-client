@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const AllSpot = ({ spot }) => {
-    const {_id, image, spotName, country, location, short, average, season, travel, total, userName, userEmail } = spot
+    const { _id, image, spotName, country, location, short, average, season, travel, total, userName, userEmail } = spot
     return (
         <div>
             <div className="card bg-base-100 shadow-xl ">
-                <figure><img className='h-[320px] mb-7' src={image} alt="Tourist spot" /></figure>
+                <figure><img className='h-72 mb-7' src={image} alt="Tourist spot" /></figure>
                 <div className=" p-2">
                     <div className='flex justify-between'>
                         <h2 className="text-sm  ">Spot Name: <span className='text-xl font-medium text-blue-600'>{spotName}</span> </h2>
