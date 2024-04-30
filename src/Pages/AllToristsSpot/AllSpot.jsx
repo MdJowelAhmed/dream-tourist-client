@@ -7,7 +7,7 @@ const AllSpot = ({ spot }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-xl ">
-                <figure><img className='h-72 mb-7' src={image} alt="Tourist spot" /></figure>
+                <figure><img className='h-72 mb-7 rounded-full' src={image} alt="Tourist spot" /></figure>
                 <div className=" p-2">
                     <div className='flex justify-between'>
                         <h2 className="text-sm  ">Spot Name: <span className='text-xl font-medium text-blue-600'>{spotName}</span> </h2>
@@ -22,7 +22,7 @@ const AllSpot = ({ spot }) => {
                     </div>
                     <div className="card-actions justify-center my-6">
                         <Link to={`/viewDetails/${_id}`}>
-                            <button className="btn btn-primary  w-60 bg-slate-500">View Details</button>
+                            <button className="btn btn-primary  w-72 bg-slate-500">View Details</button>
                         </Link>
                     </div>
                 </div>
@@ -31,6 +31,8 @@ const AllSpot = ({ spot }) => {
     )
 }
 
-AllSpot.propTypes = {}
+AllSpot.propTypes = {
+    spot:PropTypes.object.isRequired
+}
 
 export default AllSpot

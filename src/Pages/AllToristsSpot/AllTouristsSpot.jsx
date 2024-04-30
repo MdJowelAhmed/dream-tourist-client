@@ -14,14 +14,15 @@ import { useEffect, useState } from 'react';
 const AllTouristsSpot = () => {
     const loaderSpot = useLoaderData()
     const [sortOrder, setSortOrder] = useState('ascending')
-    const [sortedItems, setSortedItems] = useState([loaderSpot]);
+    const [sortedItems, setSortedItems] = useState([...loaderSpot]);
+    console.log(sortedItems)
   
     useEffect(() => {
         const sorted = [...loaderSpot].sort((a, b) => {
           if (sortOrder === 'ascending') {
-            return a.average_cost - b.average_cost;
+            return a.average - b.average;
           } else {
-            return b.average_cost - a.average_cost;
+            return b.average - a.average;
           }
         });
         setSortedItems(sorted);

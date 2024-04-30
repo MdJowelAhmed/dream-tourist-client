@@ -36,16 +36,19 @@ import Countries from "../../Pages/HomePages/Countries";
         {
             path: '/countryDetails/:country',
             element: <CountryDetails></CountryDetails>,
-            loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.country}`)
+            loader: ()=>fetch('http://localhost:5000/addSpot')
+            // loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.country}`)
         },
         {
             path: '/update/:id',
-            element: <Update></Update>,
+            element: <PrivateRoute>
+              <Update></Update>
+            </PrivateRoute>,
             loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.id}`)
             
         },
         {
-            path: '/country/:country',
+            path: '/country',
             element: <Countries></Countries>,
             loader:({params})=>fetch(`http://localhost:5000/addSpot/${params.country}`)
             
@@ -71,7 +74,9 @@ import Countries from "../../Pages/HomePages/Countries";
         },
         {
             path: '/viewDetails/:id',
-            element: <ViewDetails></ViewDetails> ,
+            element: <PrivateRoute>
+              <ViewDetails></ViewDetails> 
+            </PrivateRoute>,
             loader: ()=>fetch('http://localhost:5000/addSpot')
         },
       ]

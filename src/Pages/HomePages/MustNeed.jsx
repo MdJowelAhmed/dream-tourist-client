@@ -9,15 +9,15 @@ const MustNeed = () => {
             <div className="flex flex-col md:flex-row gap-5">
                 <div className="flex-1 mb-6">
 
-                    <div className="flex gap-5 mb-6">
+                    <div className="flex flex-col md:flex-row gap-5 mb-6">
                         <img className="w-80 h-60 rounded-xl" src="https://img.freepik.com/free-photo/backpack-packed-travel-with-passport-camera_23-2149434016.jpg?w=900&t=st=1714325018~exp=1714325618~hmac=90f89d03c3bab8a4cc4aa29d9afb70418bc34ae8c9786a7a7849b549c086ddd0" alt="" />
                         <img className="w-80 h-60 rounded-xl" src="https://img.freepik.com/free-vector/suitcase-other-travel-element-set-flat-design_23-2147644160.jpg?size=626&ext=jpg&ga=GA1.1.394552767.1710349896&semt=ais" alt="" />
                     </div>
                     <div className="w-[660px] ">
-                        <img className="w-[800px] rounded-2xl h-60" src="https://img.freepik.com/free-photo/arrangement-clothes-accessories-suitcase_23-2149064207.jpg?size=626&ext=jpg&ga=GA1.1.394552767.1710349896&semt=ais" alt="" />
+                        <img className="w-72 md:w-[800px] rounded-2xl h-60" src="https://img.freepik.com/free-photo/arrangement-clothes-accessories-suitcase_23-2149064207.jpg?size=626&ext=jpg&ga=GA1.1.394552767.1710349896&semt=ais" alt="" />
                     </div>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 ">
                     <div className="join join-vertical w-full">
                         <div className="collapse collapse-arrow join-item border border-base-300">
                             <input type="radio" name="my-accordion-4" defaultChecked />
