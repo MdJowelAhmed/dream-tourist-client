@@ -23,7 +23,7 @@ import Countries from "../../Pages/HomePages/Countries";
         {
             path: '/',
             element: <Home></Home>,
-            loader:()=>fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot')
+            loader:()=>fetch('https://touristspot.vercel.app/addSpot')
         },
         {
             path: '/register',
@@ -36,21 +36,21 @@ import Countries from "../../Pages/HomePages/Countries";
         {
             path: '/countryDetails/:country',
             element: <CountryDetails></CountryDetails>,
-            loader: ()=>fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot')
-            // loader:({params})=>fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot/${params.country}`)
+            loader: ()=>fetch('https://touristspot.vercel.app/addSpot')
+            // loader:({params})=>fetch(`https://touristspot.vercel.app/addSpot/${params.country}`)
         },
         {
             path: '/update/:id',
             element: <PrivateRoute>
               <Update></Update>
             </PrivateRoute>,
-            loader:({params})=>fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot/${params.id}`)
+            loader:({params})=>fetch(`https://touristspot.vercel.app/addSpot/${params.id}`)
             
         },
         {
             path: '/country',
             element: <Countries></Countries>,
-            loader:({params})=>fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot/${params.country}`)
+            loader:({params})=>fetch(`https://touristspot.vercel.app/addSpot/${params.country}`)
             
         },
         {
@@ -58,7 +58,7 @@ import Countries from "../../Pages/HomePages/Countries";
             element: <PrivateRoute>
               <AllTouristsSpot></AllTouristsSpot>
             </PrivateRoute> ,
-            loader: ()=>fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot')
+            loader: ()=>fetch('https://touristspot.vercel.app/addSpot')
         },
         {
             path: '/addTourists',
@@ -71,15 +71,15 @@ import Countries from "../../Pages/HomePages/Countries";
             element: <PrivateRoute>
               <MyList></MyList>
             </PrivateRoute> ,
-            // loader: ({params})=>fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/myList/${params.email}`)
-            loader:()=>fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot')
+            // loader: ({params})=>fetch(`https://touristspot.vercel.app/myList/${params.email}`)
+            loader:()=>fetch('https://touristspot.vercel.app/addSpot')
         },
         {
             path: '/viewDetails/:id',
             element: <PrivateRoute>
               <ViewDetails></ViewDetails> 
             </PrivateRoute>,
-            loader: ()=>fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot')
+            loader: ()=>fetch('https://touristspot.vercel.app/addSpot')
         },
       ]
     },

@@ -48,7 +48,7 @@ const Login = () => {
                         lastLoggedAt:result.user?.metadata?.lastSignInTime
                     }
                     
-                    fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/user`,{
+                    fetch(`https://touristspot.vercel.app/user`,{
                         method: 'POST',
                         headers:{
                             'content-type': 'application/json'

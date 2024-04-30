@@ -1,6 +1,6 @@
 # DreamTourists
 
-[Visit DreamTourists](https://southeast-asia-tourists-sport.web.app/)
+[Visit DreamTourists](https://touristspot.vercel.app/)
 
 ---
 
