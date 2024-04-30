@@ -12,20 +12,20 @@ const CountryDetails = () => {
         <div>
             <Navbar></Navbar>
 
-            <div className="flex ">
-                <h2 className="my-20 text-center font-bold text-4xl">{view.spotName} </h2>
+            <div className=" ">
+                <h2 className="my-16  font-bold text-4xl">{view.spotName} </h2>
                 <img className="w-96 h-96 rounded-full" src={view.image} alt="" />
+                
             </div>
-            <div className="p-2 mt-3">
-                <div className='flex justify-between'>
-                    <h2 className="text-sm  ">Location: <span className='text-xl font-medium text-blue-600'>{location}</span> </h2>
-                    <h2 className="text-sm  ">Cost: <span className='text-xl font-medium text-amber-600'>{average}</span> </h2>
-                </div>
-            </div>
-            <Link to={`/viewDetails/${_id}`}>
-                <button className="btn btn-primary  w-60 bg-slate-500">View Details</button>
+           
+          <div className="flex items-center">
+          <Link to={`/viewDetails/${view._id}`}>
+                <button className="btn btn-primary  w-60 mt-6 bg-slate-500">View Details</button>
             </Link>
-
+            <h2 className="text-sm  ml-10 ">Country: <span className='text-xl font-medium text-amber-600'>{country}</span> </h2>
+            {/* <h2 className="text-sm  ml-10 ">Season: <span className='text-xl font-medium text-amber-600'>{season}</span> </h2> */}
+          </div>
+         
             <Footer></Footer>
         </div>
     );
