@@ -30,18 +30,7 @@ const AllTouristsSpot = () => {
     const handleSort =()=> {
 
         setSortOrder('ascending');
-        //     console.log(sort)
-            
-        // if (sort === "acc") {
-        //     const acc=loaderSpot.sort((a, b) => a.average - b.average)
-        //     console.log(acc)
-        //     setSortBy(acc)
-        //     // console.log()
-        //     // return loaderSpot.sort((a, b) => a.average - b.average);
-        // }
-        // if (sort === "des") {
-        //     setSortBy(loaderSpot.sort((a, b) => b.average - a.average))
-            // return loaderSpot.sort((a, b) => b.average - a.average);
+        
         
     }
 

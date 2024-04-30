@@ -14,11 +14,12 @@ const MyList = () => {
     // console.log(item)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myList/${user?.email}`)
+        fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/myList/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data)
                 setItem(data)
+                
 
             });
     }, [user]);
@@ -34,7 +35,7 @@ const MyList = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addSpot/${id}`,{
+                fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot/${id}`,{
                     method: 'DELETE',
                 })
                 .then(res =>res.json())

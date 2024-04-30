@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCtSBAvSN7GCIjruZqdY8ac_B07S8hDkQs",
-  authDomain: "southeast-asia-tourists-sport.firebaseapp.com",
-  projectId: "southeast-asia-tourists-sport",
-  storageBucket: "southeast-asia-tourists-sport.appspot.com",
-  messagingSenderId: "568891950216",
-  appId: "1:568891950216:web:7efe1fa7ff14f656fd4b3d"
+  apiKey:import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

@@ -27,7 +27,7 @@ const AddTourists = () => {
         console.log(addSpot)
 
         // send server
-        fetch('http://localhost:5000/addSpot',{
+        fetch('https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot',{
             method: "POST",
             headers:{
                 "content-type":"application/json",

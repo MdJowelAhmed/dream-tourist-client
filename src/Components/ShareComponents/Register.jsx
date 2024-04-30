@@ -32,7 +32,7 @@ const Register = () => {
            if(result.user){
             const createdAt = result.user?.metadata?.creationTime;
             const user = { email, createdAt: createdAt };
-            fetch(`http://localhost:5000/user`,{
+            fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/user`,{
                 method: 'POST',
                 headers:{
                     'content-type': 'application/json'

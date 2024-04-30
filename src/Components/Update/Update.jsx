@@ -22,7 +22,7 @@ const Update = () => {
         const updateSpot={image,spotName,country,location,short,average,season,travel,total}
         console.log(updateSpot)
 
-        fetch(`http://localhost:5000/addSpot/${_id}`,{
+        fetch(`https://southeast-asia-tourists-spot-4oqov6nrm-md-jowel-ahmeds-projects.vercel.app/addSpot/${_id}`,{
             
             method: "PUT",
             headers:{
