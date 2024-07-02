@@ -1,6 +1,6 @@
 # DreamTourists
 
-[Visit DreamTourists](https://touristspot.vercel.app/)
+Live Links [Visit DreamTourists](https://touristspot.vercel.app/)
 
 ---
 
@@ -13,3 +13,14 @@
 - **Local Insights:** Access insider tips and recommendations from locals to enhance your travel experience and immerse yourself in the culture.
 - **Traveler Community:** Connect with fellow adventurers, share travel stories, and exchange tips and advice to inspire your next journey.
 - **Exclusive Deals:** Unlock special offers and discounts on accommodations, activities, and tours to make your dream vacation a reality.
+
+## Technology
+
+- **React** 
+- **JavaScript** 
+- **CSS** 
+- **HTML** 
+- **MongoDB** 
+- **Node.Js** 
+- **Express** 
+
