@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Ahmed Ali",
+        "role": "Tour Guide",
+        "photo": "https://img.freepik.com/premium-photo/muslim-businessman-with-laptop-her-company-rall_168501-5126.jpg",
+        "bio": "Ahmed is an experienced tour guide with over 10 years in the travel industry. He specializes in cultural and historical tours across Asia.",
+        "contact": {
+            "email": "ahmed.ali@example.com",
+            "phone": "+1-555-1234"
+        }
+    },
+    {
+        "name": "Aisha Khan",
+        "role": "Travel Consultant",
+        "photo": "https://img.freepik.com/premium-photo/portrait-muslim-girl-wearing-glasses-light-beige-purple-hijab-against-glass-vetrine_168171-3436.jpg",
+        "bio": "Aisha has been helping clients plan their dream vacations for over 8 years. She excels in creating customized travel itineraries.",
+        "contact": {
+            "email": "aisha.khan@example.com",
+            "phone": "+1-555-5678"
+        }
+    },
+    {
+        "name": "Karim Hassan",
+        "role": "Tour Guide",
+        "photo": "https://www.shutterstock.com/image-photo/glad-young-handsome-muslim-male-260nw-2157666127.jpg",
+        "bio": "Karim is a passionate tour guide with a love for adventure. He leads trekking and wildlife tours in South America.",
+        "contact": {
+            "email": "karim.hassan@example.com",
+            "phone": "+1-555-8765"
+        }
+    },
+    {
+        "name": "Fatima Zahra",
+        "role": "Travel Consultant",
+        "photo": "https://static.vecteezy.com/system/resources/previews/004/709/771/large_2x/portrait-of-a-beautiful-female-doctor-beautiful-muslim-in-uniform-with-a-stethoscope-smiling-and-working-with-laptop-in-hospital-s-clinic-one-person-who-has-expertise-in-professional-treatment-free-photo.jpg",
+        "bio": "Fatima is an expert in luxury travel planning, with a keen eye for detail and a passion for creating unforgettable experiences.",
+        "contact": {
+            "email": "fatima.zahra@example.com",
+            "phone": "+1-555-2345"
+        }
+    },
+    {
+        "name": "Omar Abdullah",
+        "role": "Marketing Manager",
+        "photo": "https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg",
+        "bio": "Omar is responsible for the agency's marketing strategies, ensuring that our brand reaches travelers worldwide.",
+        "contact": {
+            "email": "omar.abdullah@example.com",
+            "phone": "+1-555-3456"
+        }
+    },
+    {
+        "name": "Sara Yusuf",
+        "role": "Operations Manager",
+        "photo": "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg",
+        "bio": "Sara oversees the day-to-day operations, ensuring that everything runs smoothly for our clients.",
+        "contact": {
+            "email": "sara.yusuf@example.com",
+            "phone": "+1-555-4567"
+        }
+    },
+    {
+        "name": "Hassan Ahmed",
+        "role": "Tour Guide",
+        "photo": "https://www.shutterstock.com/image-photo/happy-cheerful-indian-professional-guy-260nw-2153777305.jpg",
+        "bio": "Hassan specializes in eco-tours and outdoor adventures, with a focus on sustainability.",
+        "contact": {
+            "email": "hassan.ahmed@example.com",
+            "phone": "+1-555-6789"
+        }
+    },
+    {
+        "name": "Amina Malik",
+        "role": "Tour Guide",
+        "photo": "https://img.freepik.com/premium-photo/woman-hijab-with-glasses-standing-front-window_662214-24563.jpg",
+        "bio": "Amina has a deep passion for cultural exploration and leads tours that immerse travelers in local traditions.",
+        "contact": {
+            "email": "amina.malik@example.com",
+            "phone": "+1-555-7890"
+        }
+    },
+    {
+        "name": "Sophia Rahman",
+        "role": "Customer Support Specialist",
+        "photo": "https://r2.erweima.ai/imgcompressed/compressed_3bd8a54079628cbf3098ca951c74a939.webp",
+        "bio": "Sophia ensures that all customer inquiries are handled promptly and efficiently, providing top-notch support.",
+        "contact": {
+            "email": "sophia.rahman@example.com",
+            "phone": "+1-555-8901"
+        }
+    },
+    {
+        "name": "Zainab Karim",
+        "role": "Content Creator",
+        "photo": "https://img.freepik.com/premium-photo/photo-hijab-woman_889227-37970.jpg",
+        "bio": "Zainab is responsible for creating engaging content that showcases the beauty and excitement of our travel destinations.",
+        "contact": {
+            "email": "zainab.karim@example.com",
+            "phone": "+1-555-9012"
+        }
+    },
+    {
+        "name": "Yusuf Ali",
+        "role": "Travel Consultant",
+        "photo": "https://images.pexels.com/photos/12437056/pexels-photo-12437056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bio": "Yusuf specializes in adventure travel planning, creating unique experiences for thrill-seekers.",
+        "contact": {
+            "email": "yusuf.ali@example.com",
+            "phone": "+1-555-6789"
+        }
+    },
+    {
+        "name": "Layla Hassan",
+        "role": "Social Media Manager",
+        "photo": "https://img.freepik.com/premium-photo/photo-beautiful-woman-wearing-hijab_812426-26848.jpg",
+        "bio": "Layla manages our social media presence, engaging with our audience and showcasing our latest tours and promotions.",
+        "contact": {
+            "email": "layla.hassan@example.com",
+            "phone": "+1-555-2345"
+        }
+    }
+]

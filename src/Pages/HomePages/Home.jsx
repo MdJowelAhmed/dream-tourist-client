@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Countries from "./Countries";
 import MustNeed from "./MustNeed";
 import Happy from "../../Components/Happy.jsx/Happy";
+import Team from "./Team/Team";
 
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
             </div>
             <Countries></Countries>
             <MustNeed></MustNeed>
+            <Team></Team>
             <Happy></Happy>
            <Footer></Footer>
         </div>
