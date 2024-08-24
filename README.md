@@ -1,6 +1,10 @@
 # DreamTourists
 
+<<<<<<< HEAD
 [Visit DreamTourists](https://southeast-asia-tourists-sport.web.app/)
+=======
+Live Links [Visit DreamTourists](https://touristspot.vercel.app/)
+>>>>>>> 234d892fe0d84fb828c576b414c4451f46178b30
 
 ---
 
@@ -13,3 +17,14 @@
 - **Local Insights:** Access insider tips and recommendations from locals to enhance your travel experience and immerse yourself in the culture.
 - **Traveler Community:** Connect with fellow adventurers, share travel stories, and exchange tips and advice to inspire your next journey.
 - **Exclusive Deals:** Unlock special offers and discounts on accommodations, activities, and tours to make your dream vacation a reality.
+
+## Technology
+
+- **React** 
+- **JavaScript** 
+- **CSS** 
+- **HTML** 
+- **MongoDB** 
+- **Node.Js** 
+- **Express** 
+
