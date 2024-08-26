@@ -67,16 +67,16 @@ const Newsletter = () => {
                 <h2 className="text-3xl lg:text-5xl  font-bold text-gray-900 dark:text-gray-100 text-center  mb-5">NewsLetter</h2>
                 <p className="max-w-3xl mx-auto mb-10">Include a clear call to action, guiding customers or potential leads on what to do next. Ensure your contact information is easily accessible for queries. Test your emails for mobile responsiveness.</p>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-between p-8 text-gray-800 gap-5 ">
+            <div className="flex flex-col md:flex-row items-center justify-between p-8  text-gray-800 gap-5 ">
                 {/* Input Fields Section */}
-                <form onSubmit={handleSubmit} className="md:w-1/2 space-y-4">
+                <form onSubmit={handleSubmit} className="md:w-1/2 space-y-4 shadow-2xl p-5 lg:p-10">
                     <input
                         type="text"
                         name="name"
                         placeholder="Name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full p-2 rounded bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 rounded shadow-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
                         required
                     />
                     <input
@@ -85,7 +85,7 @@ const Newsletter = () => {
                         placeholder="Phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full p-2 rounded bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 rounded shadow-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
                         required
                     />
                     <input
@@ -94,10 +94,10 @@ const Newsletter = () => {
                         placeholder="Email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full p-2 rounded bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 rounded shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
                         required
                     />
-                    <button type="submit" className="w-full p-2 rounded bg-blue-500 hover:bg-blue-700 transition-colors">
+                    <button type="submit" className="w-full p-2 rounded bg-blue-500 hover:bg-blue-700 transition-colors text-center">
                         Subscribe
                     </button>
                     {/* Success or Error Message */}

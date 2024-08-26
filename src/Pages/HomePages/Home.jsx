@@ -12,6 +12,7 @@ import Happy from "../../Components/Happy.jsx/Happy";
 import Team from "./Team/Team";
 import Newsletter from "./newsLetter/NewsLetter";
 import Reviews from "./Reviews/Reviews";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -22,6 +23,9 @@ const Home = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Dream Tourist | Home</title>
+            </Helmet>
             <Navbar></Navbar>
             <Banner></Banner>
             <div className=" my-20 ">
