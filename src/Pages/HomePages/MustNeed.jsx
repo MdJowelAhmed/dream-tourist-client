@@ -1,6 +1,6 @@
 const MustNeed = () => {
     return (
-        <div className="px-4 md:px-8">
+        <div className="px-4 md:px-8 mb-16">
             <div className="my-16 text-center">
                 <h2 className="text-5xl font-bold">Must Need For Travels</h2>
             </div>

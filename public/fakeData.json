@@ -1,122 +1,131 @@
 [
     {
-        "name": "Ahmed Ali",
-        "role": "Tour Guide",
-        "photo": "https://img.freepik.com/premium-photo/muslim-businessman-with-laptop-her-company-rall_168501-5126.jpg",
-        "bio": "Ahmed is an experienced tour guide with over 10 years in the travel industry. He specializes in cultural and historical tours across Asia.",
-        "contact": {
-            "email": "ahmed.ali@example.com",
-            "phone": "+1-555-1234"
-        }
+      "name": "Aisha Khan",
+      "rating": 5,
+      "comment": "Amazing service! The entire experience was seamless and enjoyable.",
+      "date": "2024-08-20",
+      "country": "Bangladesh",
+      "profile": "https://play-lh.googleusercontent.com/08tyEZQdHJLObd2Sjr7CEWM3ICU7OyUd6inZGCnbXWWO4JO-BKeu0e2NmcINP-EIfg=w240-h480-rw"
     },
     {
-        "name": "Aisha Khan",
-        "role": "Travel Consultant",
-        "photo": "https://img.freepik.com/premium-photo/portrait-muslim-girl-wearing-glasses-light-beige-purple-hijab-against-glass-vetrine_168171-3436.jpg",
-        "bio": "Aisha has been helping clients plan their dream vacations for over 8 years. She excels in creating customized travel itineraries.",
-        "contact": {
-            "email": "aisha.khan@example.com",
-            "phone": "+1-555-5678"
-        }
+      "name": "Mohammed Ali",
+      "rating": 4,
+      "comment": "Great trip, but the accommodation could have been better.",
+      "date": "2024-08-18",
+      "country": "India",
+      "profile": "https://thumbs.dreamstime.com/b/boss-man-looking-camera-smiling-young-businessman-banker-beard-photo-close-up-portrait-231320221.jpg"
     },
     {
-        "name": "Karim Hassan",
-        "role": "Tour Guide",
-        "photo": "https://www.shutterstock.com/image-photo/glad-young-handsome-muslim-male-260nw-2157666127.jpg",
-        "bio": "Karim is a passionate tour guide with a love for adventure. He leads trekking and wildlife tours in South America.",
-        "contact": {
-            "email": "karim.hassan@example.com",
-            "phone": "+1-555-8765"
-        }
+      "name": "Fatima Rahman",
+      "rating": 5,
+      "comment": "Highly recommended! The tour guide was very knowledgeable.",
+      "date": "2024-08-15",
+      "country": "Nepal",
+      "profile": "https://pxdar.com/wp-content/uploads/2024/06/stylish-whatsapp-dp-for-girl-1024x1024.jpg"
     },
     {
-        "name": "Fatima Zahra",
-        "role": "Travel Consultant",
-        "photo": "https://static.vecteezy.com/system/resources/previews/004/709/771/large_2x/portrait-of-a-beautiful-female-doctor-beautiful-muslim-in-uniform-with-a-stethoscope-smiling-and-working-with-laptop-in-hospital-s-clinic-one-person-who-has-expertise-in-professional-treatment-free-photo.jpg",
-        "bio": "Fatima is an expert in luxury travel planning, with a keen eye for detail and a passion for creating unforgettable experiences.",
-        "contact": {
-            "email": "fatima.zahra@example.com",
-            "phone": "+1-555-2345"
-        }
+      "name": "Omar Siddiqui",
+      "rating": 4,
+      "comment": "Good experience overall, but the food options were limited.",
+      "date": "2024-08-12",
+      "country": "Pakistan",
+      "profile": "https://thumbs.dreamstime.com/b/boss-man-looking-camera-smiling-young-businessman-banker-beard-photo-close-up-portrait-284678755.jpg"
     },
     {
-        "name": "Omar Abdullah",
-        "role": "Marketing Manager",
-        "photo": "https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg",
-        "bio": "Omar is responsible for the agency's marketing strategies, ensuring that our brand reaches travelers worldwide.",
-        "contact": {
-            "email": "omar.abdullah@example.com",
-            "phone": "+1-555-3456"
-        }
+      "name": "Zara Hussain",
+      "rating": 5,
+      "comment": "The trip exceeded my expectations! Will book again.",
+      "date": "2024-08-10",
+      "country": "Maldives",
+      "profile": "https://pxdar.com/wp-content/uploads/2024/06/stylish-dp-2024-1024x1024.jpg"
     },
     {
-        "name": "Sara Yusuf",
-        "role": "Operations Manager",
-        "photo": "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg",
-        "bio": "Sara oversees the day-to-day operations, ensuring that everything runs smoothly for our clients.",
-        "contact": {
-            "email": "sara.yusuf@example.com",
-            "phone": "+1-555-4567"
-        }
+      "name": "Yusuf Ahmed",
+      "rating": 4,
+      "comment": "Wonderful experience, but the transportation could be improved.",
+      "date": "2024-08-08",
+      "country": "Sri Lanka",
+      "profile": "https://t3.ftcdn.net/jpg/03/70/29/26/240_F_370292674_QS5nA0bJgyRD6VzYycTQdSWhhSHQJbQZ.jpg"
     },
     {
-        "name": "Hassan Ahmed",
-        "role": "Tour Guide",
-        "photo": "https://www.shutterstock.com/image-photo/happy-cheerful-indian-professional-guy-260nw-2153777305.jpg",
-        "bio": "Hassan specializes in eco-tours and outdoor adventures, with a focus on sustainability.",
-        "contact": {
-            "email": "hassan.ahmed@example.com",
-            "phone": "+1-555-6789"
-        }
+      "name": "Mariam Farooq",
+      "rating": 5,
+      "comment": "Fantastic tour! The itinerary was well-planned.",
+      "date": "2024-08-05",
+      "country": "Afghanistan",
+      "profile": "https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&format=jpg&width=944"
     },
     {
-        "name": "Amina Malik",
-        "role": "Tour Guide",
-        "photo": "https://img.freepik.com/premium-photo/woman-hijab-with-glasses-standing-front-window_662214-24563.jpg",
-        "bio": "Amina has a deep passion for cultural exploration and leads tours that immerse travelers in local traditions.",
-        "contact": {
-            "email": "amina.malik@example.com",
-            "phone": "+1-555-7890"
-        }
+      "name": "Ibrahim Khan",
+      "rating": 5,
+      "comment": "Loved every moment of the trip! Highly organized.",
+      "date": "2024-08-02",
+      "country": "Bangladesh",
+      "profile": "https://t3.ftcdn.net/jpg/06/39/64/14/360_F_639641415_lLjzVDVwL0RwdNrkURYFboc4N21YIXJR.jpg"
     },
     {
-        "name": "Sophia Rahman",
-        "role": "Customer Support Specialist",
-        "photo": "https://r2.erweima.ai/imgcompressed/compressed_3bd8a54079628cbf3098ca951c74a939.webp",
-        "bio": "Sophia ensures that all customer inquiries are handled promptly and efficiently, providing top-notch support.",
-        "contact": {
-            "email": "sophia.rahman@example.com",
-            "phone": "+1-555-8901"
-        }
+      "name": "Layla Siddiqui",
+      "rating": 4,
+      "comment": "Good experience, but there were some delays in the schedule.",
+      "date": "2024-07-30",
+      "country": "India",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKa8rdbebgLF1SzLQN71RnKi-vxiJrKCeSnvK3rxt-PNc732MAn6oSlgpNaB2hr2ppSw&usqp=CAU"
     },
     {
-        "name": "Zainab Karim",
-        "role": "Content Creator",
-        "photo": "https://img.freepik.com/premium-photo/photo-hijab-woman_889227-37970.jpg",
-        "bio": "Zainab is responsible for creating engaging content that showcases the beauty and excitement of our travel destinations.",
-        "contact": {
-            "email": "zainab.karim@example.com",
-            "phone": "+1-555-9012"
-        }
+      "name": "Hassan Javed",
+      "rating": 5,
+      "comment": "Excellent service and a memorable experience.",
+      "date": "2024-07-28",
+      "country": "Nepal",
+      "profile": "https://thumbs.wbm.im/pw/small/f1594a827664fd77fd90860cba761015.jpg"
     },
     {
-        "name": "Yusuf Ali",
-        "role": "Travel Consultant",
-        "photo": "https://images.pexels.com/photos/12437056/pexels-photo-12437056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "bio": "Yusuf specializes in adventure travel planning, creating unique experiences for thrill-seekers.",
-        "contact": {
-            "email": "yusuf.ali@example.com",
-            "phone": "+1-555-6789"
-        }
+      "name": "Sadia Bano",
+      "rating": 4,
+      "comment": "The trip was well-organized, but the weather was a bit of a challenge.",
+      "date": "2024-07-25",
+      "country": "Pakistan",
+      "profile": "https://i.pinimg.com/236x/fb/8d/2b/fb8d2be23fb260b3564a3d837e279fef.jpg"
     },
     {
-        "name": "Layla Hassan",
-        "role": "Social Media Manager",
-        "photo": "https://img.freepik.com/premium-photo/photo-beautiful-woman-wearing-hijab_812426-26848.jpg",
-        "bio": "Layla manages our social media presence, engaging with our audience and showcasing our latest tours and promotions.",
-        "contact": {
-            "email": "layla.hassan@example.com",
-            "phone": "+1-555-2345"
-        }
+      "name": "Bilal Hussain",
+      "rating": 5,
+      "comment": "A perfect vacation! Everything was top-notch.",
+      "date": "2024-07-22",
+      "country": "Maldives",
+      "profile": "https://www.shutterstock.com/image-photo/portrait-serious-confident-businessman-entrepreneur-260nw-2022462281.jpg"
+    },
+    {
+      "name": "Amina Qureshi",
+      "rating": 5,
+      "comment": "Loved the destinations! Would definitely recommend.",
+      "date": "2024-07-19",
+      "country": "Sri Lanka",
+      "profile": "https://media.istockphoto.com/id/1338134319/photo/portrait-of-young-indian-businesswoman-or-school-teacher-pose-indoors.jpg?s=612x612&w=0&k=20&c=Dw1nKFtnU_Bfm2I3OPQxBmSKe9NtSzux6bHqa9lVZ7A="
+    },
+    {
+      "name": "Ahmed Sheikh",
+      "rating": 4,
+      "comment": "Great experience overall, but the hotel could have been better.",
+      "date": "2024-07-16",
+      "country": "Afghanistan",
+      "profile": "https://www.shutterstock.com/image-photo/profile-picture-smiling-successful-young-260nw-2040223583.jpg"
+    },
+    {
+      "name": "Noor Islam",
+      "rating": 5,
+      "comment": "The guide was amazing, and the sites were breathtaking.",
+      "date": "2024-07-13",
+      "country": "Bangladesh",
+      "profile": "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+    },
+    {
+      "name": "Rania Ali",
+      "rating": 5,
+      "comment": "Fantastic trip! Will definitely book with them again.",
+      "date": "2024-07-10",
+      "country": "India",
+      "profile": "https://www.shutterstock.com/image-photo/profile-picture-smiling-indian-female-260nw-1840197364.jpg"
     }
-]
+  ]
+  

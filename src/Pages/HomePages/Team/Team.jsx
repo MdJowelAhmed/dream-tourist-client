@@ -20,8 +20,8 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 p-6">
-      <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Meet Our Team</h2>
+    <div className="bg-gray-100 dark:bg-gray-800 p-6 mb-16">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 text-center mb-10">Meet Our Team</h2>
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
@@ -44,7 +44,7 @@ const Team = () => {
               />
               <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{member.name}</h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">{member.role}</p>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">{member.bio}</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">{member?.bio.slice(0,120) }</p>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 <p>Email: {member.contact.email}</p>
                 <p>Phone: {member.contact.phone}</p>

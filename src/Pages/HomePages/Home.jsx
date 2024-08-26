@@ -10,6 +10,8 @@ import Countries from "./Countries";
 import MustNeed from "./MustNeed";
 import Happy from "../../Components/Happy.jsx/Happy";
 import Team from "./Team/Team";
+import Newsletter from "./newsLetter/NewsLetter";
+import Reviews from "./Reviews/Reviews";
 
 
 const Home = () => {
@@ -36,8 +38,11 @@ const Home = () => {
 
             </div>
             <Countries></Countries>
-            <MustNeed></MustNeed>
             <Team></Team>
+            <Reviews></Reviews>
+            <Newsletter ></Newsletter>
+            <MustNeed></MustNeed>
+           
             <Happy></Happy>
            <Footer></Footer>
         </div>

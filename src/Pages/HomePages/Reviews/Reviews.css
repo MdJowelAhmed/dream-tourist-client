@@ -1,0 +1,24 @@
+/* Reviews.css */
+
+.container {
+    max-width: 100%;
+  }
+  
+  .card {
+    /* Ensure card has a max width */
+    max-width: 100%;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 640px) { /* Small devices (sm) */
+    .card {
+      flex: 1 1 50%;
+    }
+  }
+  
+  @media (min-width: 1024px) { /* Large devices (lg) */
+    .card {
+      flex: 1 1 25%;
+    }
+  }
+  
