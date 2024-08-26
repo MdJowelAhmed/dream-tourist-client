@@ -73,7 +73,7 @@ const Newsletter = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="Name"
+                        placeholder="Write Your Name"
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full p-2 rounded shadow-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
@@ -82,7 +82,7 @@ const Newsletter = () => {
                     <input
                         type="text"
                         name="phone"
-                        placeholder="Phone"
+                        placeholder="Write Your Phone"
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full p-2 rounded shadow-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
@@ -91,7 +91,7 @@ const Newsletter = () => {
                     <input
                         type="email"
                         name="email"
-                        placeholder="Email"
+                        placeholder="Write Your Email"
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full p-2 rounded shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"

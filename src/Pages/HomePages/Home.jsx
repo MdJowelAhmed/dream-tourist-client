@@ -13,6 +13,7 @@ import Team from "./Team/Team";
 import Newsletter from "./newsLetter/NewsLetter";
 import Reviews from "./Reviews/Reviews";
 import { Helmet } from "react-helmet-async";
+import UpComing from "./upComing/UpComing";
 
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
 
             </div>
             <Countries></Countries>
+            <UpComing></UpComing>
             <Team></Team>
             <Reviews></Reviews>
             <Newsletter ></Newsletter>
