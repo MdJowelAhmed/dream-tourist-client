@@ -8,7 +8,7 @@ const Countries = () => {
     return (
         <div>
 
-            <h2 className="text-center text-5xl font-bold">Countries</h2>
+            <h2 className="text-center text-5xl font-bold mb-4">Countries</h2>
             <p className="text-center text-sm">We organize travel to many countries in South Asia. For example,
                 we have services in many countries <br /> including Bangladesh,
                 India, Thailand, Indonesia, Pakistan, Malaysia.</p>

@@ -5,7 +5,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://touristspot.vercel.app/reviews')
             .then(response => response.json())
             .then(data => setReviews(data))
             .catch(error => console.error('Error fetching reviews:', error));
@@ -16,7 +16,7 @@ const Reviews = () => {
 
     return (
         <div className="container mx-auto p-4">
-            <h1 className="text-3xl font-bold mb-6 text-center">Customer Reviews</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold mb-6 text-center">Customer Reviews</h1>
 
             <Swiper
                 spaceBetween={30}

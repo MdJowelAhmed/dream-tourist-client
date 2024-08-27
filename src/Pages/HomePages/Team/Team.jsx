@@ -6,7 +6,7 @@ const Team = () => {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/team')
+    fetch('https://touristspot.vercel.app/team')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -21,7 +21,7 @@ const Team = () => {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-800 p-6 mb-5">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 text-center mb-10">Meet Our Team</h2>
+      <h2 className="text-3xl font-bold lg:text-5xl text-gray-900 dark:text-gray-100 text-center mb-10">Meet Our Team</h2>
       <p className=" text-center max-w-3xl mx-auto mb-12">Meet the passionate individuals who drive our vision forward. Our team is a diverse group of talented professionals, each bringing unique skills and perspectives to create something truly special. Get to know the people behind the scenes who are dedicated to making our mission a success</p>
       <Swiper
         spaceBetween={30}

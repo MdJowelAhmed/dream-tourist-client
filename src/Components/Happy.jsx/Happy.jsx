@@ -5,7 +5,7 @@ const Happy = () => {
         <div>
             <div>
                 <h2 className="text-5xl font-bold text-center mb-6 mt-12 text-green-600">HAPPY CLIENTS</h2>
-                <p className="text-sm text-blue-400 text-center ">We know how important your holiday is for you. You will spend your valuable money and time on a  <br /> relaxing and memorable vacation. We are here to arrange your holiday as per your requirements.  <br /> Many agencies force you to deal with multiple people throughout the booking process, making it disjointed and impersonal.  <br /> At Dream Destination Tours, you will deal with the same travel expert from the moment  <br /> of initial contact until you are safely back at home.</p>
+                <p className="text-sm text-center ">We know how important your holiday is for you. You will spend your valuable money and time on a  <br /> relaxing and memorable vacation. We are here to arrange your holiday as per your requirements.  <br /> Many agencies force you to deal with multiple people throughout the booking process, making it disjointed and impersonal.  <br /> At Dream Destination Tours, you will deal with the same travel expert from the moment  <br /> of initial contact until you are safely back at home.</p>
                 <div className="grid grid-cols-1 mt-12 md:grid-cols-3 gap-5 hover:touch-pinch-zoom" >
                     <img className="h-60" data-aos="zoom-in-up" src="https://c8.alamy.com/comp/K2HW0B/free-happy-cheerful-young-woman-with-hands-up-enjoying-eifel-tower-K2HW0B.jpg" alt="" />
 

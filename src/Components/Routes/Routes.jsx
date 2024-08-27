@@ -37,7 +37,6 @@ import Countries from "../../Pages/HomePages/Countries";
             path: '/countryDetails/:country',
             element: <CountryDetails></CountryDetails>,
             loader: ()=>fetch('https://touristspot.vercel.app/addSpot')
-            // loader:({params})=>fetch(`https://touristspot.vercel.app/addSpot/${params.country}`)
         },
         {
             path: '/update/:id',
@@ -71,7 +70,6 @@ import Countries from "../../Pages/HomePages/Countries";
             element: <PrivateRoute>
               <MyList></MyList>
             </PrivateRoute> ,
-            // loader: ({params})=>fetch(`https://touristspot.vercel.app/myList/${params.email}`)
             loader:()=>fetch('https://touristspot.vercel.app/addSpot')
         },
         {
