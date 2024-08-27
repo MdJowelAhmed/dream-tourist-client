@@ -1,0 +1,40 @@
+@keyframes scrollDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .scroll-card {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100px; /* Adjust as necessary */
+    text-align: center;
+  }
+  
+  .scroll-card-price {
+    animation: scrollDown 5s linear infinite;
+    right: 0;
+    top: 10%;
+  }
+  
+  .scroll-card-duration {
+    animation: scrollUp 5s linear infinite;
+    right: 0;
+    top: 30%; /* Adjust position as necessary */
+  }
+  

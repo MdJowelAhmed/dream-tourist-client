@@ -20,8 +20,9 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 p-6 mb-16">
+    <div className="bg-gray-100 dark:bg-gray-800 p-6 mb-5">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 text-center mb-10">Meet Our Team</h2>
+      <p className=" text-center max-w-3xl mx-auto mb-12">Meet the passionate individuals who drive our vision forward. Our team is a diverse group of talented professionals, each bringing unique skills and perspectives to create something truly special. Get to know the people behind the scenes who are dedicated to making our mission a success</p>
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
@@ -44,7 +45,7 @@ const Team = () => {
               />
               <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{member.name}</h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">{member.role}</p>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">{member?.bio.slice(0,120) }</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">{member?.bio.slice(0, 120)}</p>
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 <p>Email: {member.contact.email}</p>
                 <p>Phone: {member.contact.phone}</p>
